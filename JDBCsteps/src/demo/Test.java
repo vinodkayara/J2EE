@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class Test {
 
 	public static void main(String[] args) {
-		String query="INSERT INTO EMP VALUES(1,'VINOD',SYSDATE())";
+		String query="INSERT INTO EMP VALUES(3,'VIKAS',SYSDATE())";
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");  //1
 			System.out.println("Driver Loaded");
@@ -16,10 +16,10 @@ public class Test {
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/demo5", "root", "tiger"); //2
 			System.out.println("Connection established");
 			
-			Statement st=con.createStatement();
+			Statement st=con.createStatement();  //3
 			System.out.println("Platform created");
 			
-			int i=st.executeUpdate(query);
+			int i=st.executeUpdate(query);                   //4
 			System.out.println("No of rows inserted:"+i);
 			
 		} catch (ClassNotFoundException | SQLException e) {
