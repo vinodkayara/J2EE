@@ -12,10 +12,9 @@ public class Retrival {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/demo5", "root", "tiger");
-            Statement st = con.createStatement();
+            Class.forName("com.mysql.cj.jdbc.Driver");    //load and register the driver class
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo5", "root", "tiger");  
+            Statement st = con.createStatement();                   
 
             System.out.println("Enter the Name:");
             String name = sc.nextLine();
@@ -36,6 +35,8 @@ public class Retrival {
                 System.out.println("-----------------");
             }
 
+            
+          
        
             
 
