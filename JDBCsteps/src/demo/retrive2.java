@@ -24,7 +24,7 @@ public class retrive2 {
 					ResultSet rs =ps.executeQuery();
 					while(rs.next()) {
 						String empname=rs.getString("name");
-						System.out.println("name is "+  name);
+						System.out.println("Welcome  "+  name);
 					}
 					
 					
