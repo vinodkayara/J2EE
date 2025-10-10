@@ -9,6 +9,10 @@ public class Customer {
 	private String mail;
 	private int pin;
 	private String date;
+	private String status;
+	
+	//getters and setters
+	
 	public int getCid() {
 		return cid;
 	}
@@ -51,8 +55,14 @@ public class Customer {
 	public void setDate(String date) {
 		this.date = date;
 	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	
-	//getters and setters
+
 	
 
 }

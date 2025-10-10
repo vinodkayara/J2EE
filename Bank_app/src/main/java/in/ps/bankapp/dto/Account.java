@@ -8,6 +8,7 @@ public class Account {
 	private String  acc_type;
 	private double balance;
 	private String date;
+	private  String status;
 	public int getAcc_id() {
 		return acc_id;
 	}
@@ -43,6 +44,12 @@ public class Account {
 	}
 	public void setDate(String date) {
 		this.date = date;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 	
